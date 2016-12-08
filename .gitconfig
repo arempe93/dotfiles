@@ -1,0 +1,22 @@
+[user]
+	name = Andrew Rempe
+	email = andrewrempe@gmail.com
+	signingkey = ----------------
+[alias]
+	s = status -sb
+	hist = log --pretty=format:'%C(auto)%h%C(reset) | %s%C(auto)%d%C(reset)' --graph
+	co = checkout
+	undo = reset --soft HEAD^
+	last = diff HEAD^
+	cur = diff HEAD
+	sign = commit -S
+	cp = cherry-pick
+[push]
+	default = simple
+[merge]
+	ff = only
+[pager]
+	diff = diff-so-fancy | less --tabs=4 -RFX
+	show = diff-so-fancy | less --tabs=4 -RFX
+[color]
+	ui = 1
